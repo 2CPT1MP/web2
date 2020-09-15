@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title> Связаться </title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	<body>
+		<header class="main-header dark-background">
+			<h1 class="site-title"> Личный сайт </h1>
+		</header>
+		<nav>
+			<a href="index.html">                  Главная  </a>
+			<a href="about.html">                  Обо мне  </a>
+			<a href="interests.html">         	   Интересы </a>
+			<a href="studies.html">   		       Учёба    </a>
+			<a href="photos.html">                 Альбом   </a>
+			<a href="contact.html" class="active"> Контакт  </a>
+			<a href="test.html">                   Тест     </a>
+		</nav>
+		<main>
+			<article class="flex-container card">
+				<form action="mailto:2CPT1MP@gmail.com" method=POST enctype="text/plain">
+					<label> Имя
+						<input type="text" name="sender-name">
+					</label>
+
+					<label for="sender-gender"> Пол </label>
+					<input type="radio" name="sender-gender" id="male" value="male">
+					<label for="male"> Мужской </label>
+
+					<input type="radio" name="sender-gender" id="female" value="female">
+					<label for="female"> Женский</label>
+					<br>
+					<label for="sender-age"> Возраст </label>
+					<select name="sender-age">
+						<option >&lt;18</option>
+						<option selected="">18-24</option>
+						<option>25-30</option>
+						<option>30-40</option>
+						<option>40-59</option>
+						<option>60-80</option>
+						<option>&gt;80</option>
+					</select>
+					<label for="sender-email"> Электронная почта </label>
+					<input type="email" name="sender-email">
+
+					<label for="sender-msg"> Сообщение </label>
+					<textarea name="sender-msg" rows="10" cols="50"></textarea>
+					
+					<input type="reset">
+					<input type="submit">
+				</form>
+			</article>
+		</main>
+		<footer class="main-footer dark-background">
+			<p> Copyright &copy;2020 </p>
+		</footer>
+	</body>
+</html>

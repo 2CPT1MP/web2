@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title> Тестирование </title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	<body>
+		<header class="main-header dark-background">
+			<h1 class="site-title"> Личный сайт </h1>
+		</header>
+		<nav>
+			<a href="index.html">                Главная  </a>
+			<a href="about.html" >               Обо мне  </a>
+			<a href="interests.html">         	 Интересы </a>
+			<a href="studies.html">   		     Учёба    </a>
+			<a href="photos.html">               Альбом   </a>
+			<a href="contact.html">              Контакт  </a>
+			<a href="test.html" class="active">  Тест     </a>
+		</nav>
+		<main>
+			<article class="flex-container card">
+				<form action="mailto:2CPT1MP@gmail.com" method=POST enctype="text/plain">
+					<fieldset><legend> Общая информация </legend>
+						<label for="disc-name"> Наименование дисциплины: </label>
+						<input type="text" name="disc-name" readonly value="Информатика">
+						
+						<label for="sender-name"> Ваше ФИО </label>
+						<input type="text" name="sender-name">
+
+						<label for="sender-group"> Группа </label>
+						<input type="text" name="sender-group">
+
+						<label for="sender-gender"> Пол </label>
+						<input type="radio" name="sender-gender" id="male" value="male">
+						<label for="male"> Мужской </label>
+
+						<input type="radio" name="sender-gender" id="female"value="female">
+						<label for="female"> Женский </label><br/>
+						
+						<label for="sender-age"> Возраст </label>
+						<input type=number name="sender-age" min=17 max=80 value="18">
+						</fieldset>
+					</fieldset>
+					<fieldset><legend> Вопросы </legend>
+						<label for="word-is"> Microsoft Word это </label>
+						<select name="word-is">
+							<option>-</option>
+							<option value="processor"> Текстовый процессор </option>
+							<option value="editor"> Текстовый редактор </option>
+						</select>
+						<label for="usb-is"> USB расшифровывается как </label>
+						<select name="usb-is">
+							<option>-</option>
+							<option> Universal Series Bit </option>
+							<option> Universal Serial Bus </option>
+						</select>
+						<label for="formatting-is"> Что такое форматирование в Word </label>
+						<select name="formatting-is">
+							<option value="none"> - </option>
+							<option value="clear"> Очистка</option>
+							<option value="apperance"> Оформление </option>
+						</select>
+					</fieldset>
+					<input type="reset">
+					<input type="submit">
+				</form>
+			</article>
+		</main>
+		<footer class="main-footer dark-background">
+			<p> Copyright &copy;2020 </p>
+		</footer>
+	</body>
+</html>
