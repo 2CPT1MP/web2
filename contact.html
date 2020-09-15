@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title> Связаться </title>
 		<link rel="stylesheet" href="style.css" type="text/css">
+		<script src="form_verification.js"></script>
 	</head>
 	<body>
 		<header class="main-header dark-background">
@@ -21,9 +22,8 @@
 		<main>
 			<article class="flex-container card">
 				<form action="mailto:2CPT1MP@gmail.com" method=POST enctype="text/plain">
-					<label> Имя
-						<input type="text" name="sender-name" required>
-					</label>
+					<label for="sender-name" id="fio-label"> Ваше ФИО </label>
+					<input type="text" name="sender-name" required id="fio" onchange="check()">
 
 					<label for="sender-gender"> Пол </label>
 					<input type="radio" name="sender-gender" id="male" value="male" required>
@@ -45,11 +45,14 @@
 					<label for="sender-email"> Электронная почта </label>
 					<input type="email" name="sender-email" required>
 
+					<label for="sender-phone"> Телефон </label>
+					<input type="tel" name="sender-phone" required id="phone" onchange="check()">
+
 					<label for="sender-msg"> Сообщение </label>
 					<textarea name="sender-msg" rows="10" cols="50" required></textarea>
 					
 					<input type="reset">
-					<input type="submit">
+					<input type="submit" onclick="check()">
 				</form>
 			</article>
 		</main>

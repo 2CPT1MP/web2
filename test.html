@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title> Тестирование </title>
 		<link rel="stylesheet" href="style.css" type="text/css">
+		<script src="form_verification.js"></script>
 	</head>
 	<body>
 		<header class="main-header dark-background">
@@ -25,8 +26,8 @@
 						<label for="disc-name"> Наименование дисциплины: </label>
 						<input type="text" name="disc-name" readonly value="Информатика">
 						
-						<label for="sender-name"> Ваше ФИО </label>
-						<input type="text" name="sender-name" required>
+						<label for="sender-name" id="fio-label"> Ваше ФИО </label>
+						<input type="text" name="sender-name" required id="fio" onchange="check()">
 
 						<label for="sender-group"> Группа </label>
 						<input type="text" name="sender-group" required>
@@ -35,12 +36,11 @@
 						<input type="radio" name="sender-gender" id="male" value="male" required>
 						<label for="male"> Мужской </label>
 
-						<input type="radio" name="sender-gender" id="female"value="female">
-						<label for="female" required> Женский </label><br/>
+						<input type="radio" name="sender-gender" id="female"value="female" required>
+						<label for="female"> Женский </label><br/>
 						
 						<label for="sender-age"> Возраст </label>
 						<input type=number name="sender-age" min=17 max=80 value="18" required>
-						</fieldset>
 					</fieldset>
 					<fieldset><legend> Вопросы </legend>
 						<label for="word-is"> Microsoft Word это </label>
@@ -63,7 +63,7 @@
 						</select>
 					</fieldset>
 					<input type="reset">
-					<input type="submit">
+					<input type="submit" onclick="check()">
 				</form>
 			</article>
 		</main>
