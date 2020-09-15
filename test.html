@@ -26,37 +26,37 @@
 						<input type="text" name="disc-name" readonly value="Информатика">
 						
 						<label for="sender-name"> Ваше ФИО </label>
-						<input type="text" name="sender-name">
+						<input type="text" name="sender-name" required>
 
 						<label for="sender-group"> Группа </label>
-						<input type="text" name="sender-group">
+						<input type="text" name="sender-group" required>
 
 						<label for="sender-gender"> Пол </label>
-						<input type="radio" name="sender-gender" id="male" value="male">
+						<input type="radio" name="sender-gender" id="male" value="male" required>
 						<label for="male"> Мужской </label>
 
 						<input type="radio" name="sender-gender" id="female"value="female">
-						<label for="female"> Женский </label><br/>
+						<label for="female" required> Женский </label><br/>
 						
 						<label for="sender-age"> Возраст </label>
-						<input type=number name="sender-age" min=17 max=80 value="18">
+						<input type=number name="sender-age" min=17 max=80 value="18" required>
 						</fieldset>
 					</fieldset>
 					<fieldset><legend> Вопросы </legend>
 						<label for="word-is"> Microsoft Word это </label>
-						<select name="word-is">
+						<select name="word-is" required>
 							<option>-</option>
 							<option value="processor"> Текстовый процессор </option>
 							<option value="editor"> Текстовый редактор </option>
 						</select>
 						<label for="usb-is"> USB расшифровывается как </label>
-						<select name="usb-is">
+						<select name="usb-is" required>
 							<option>-</option>
 							<option> Universal Series Bit </option>
 							<option> Universal Serial Bus </option>
 						</select>
 						<label for="formatting-is"> Что такое форматирование в Word </label>
-						<select name="formatting-is">
+						<select name="formatting-is" required>
 							<option value="none"> - </option>
 							<option value="clear"> Очистка</option>
 							<option value="apperance"> Оформление </option>

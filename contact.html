@@ -22,20 +22,20 @@
 			<article class="flex-container card">
 				<form action="mailto:2CPT1MP@gmail.com" method=POST enctype="text/plain">
 					<label> Имя
-						<input type="text" name="sender-name">
+						<input type="text" name="sender-name" required>
 					</label>
 
 					<label for="sender-gender"> Пол </label>
-					<input type="radio" name="sender-gender" id="male" value="male">
+					<input type="radio" name="sender-gender" id="male" value="male" required>
 					<label for="male"> Мужской </label>
 
-					<input type="radio" name="sender-gender" id="female" value="female">
+					<input type="radio" name="sender-gender" id="female" value="female" required>
 					<label for="female"> Женский</label>
 					<br>
 					<label for="sender-age"> Возраст </label>
-					<select name="sender-age">
+					<select name="sender-age" required>
 						<option >&lt;18</option>
-						<option selected="">18-24</option>
+						<option selected>18-24</option>
 						<option>25-30</option>
 						<option>30-40</option>
 						<option>40-59</option>
@@ -43,10 +43,10 @@
 						<option>&gt;80</option>
 					</select>
 					<label for="sender-email"> Электронная почта </label>
-					<input type="email" name="sender-email">
+					<input type="email" name="sender-email" required>
 
 					<label for="sender-msg"> Сообщение </label>
-					<textarea name="sender-msg" rows="10" cols="50"></textarea>
+					<textarea name="sender-msg" rows="10" cols="50" required></textarea>
 					
 					<input type="reset">
 					<input type="submit">
